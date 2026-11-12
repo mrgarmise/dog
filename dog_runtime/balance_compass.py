@@ -24,8 +24,8 @@ def tilt_vector(roll, pitch, full_scale=0.35):
     return (_clamp(math.sin(pitch) / d, -1, 1),
             _clamp(-math.sin(roll) * math.cos(pitch) / d, -1, 1))
 
-def eight_led_rgb(vector, color, base=0.14, contrast=0.12, cap=60):
-    """Balanced means all eight equally dim; offset makes near LEDs brighter."""
+def seven_led_rgb(vector, color, base=0.14, contrast=0.12, cap=60):
+    """Balanced means all seven equally dim; offset makes near LEDs brighter."""
     if len(vector) != 2 or color not in ("red", "green"):
         raise ValueError("invalid vector or color")
     x, y = map(float, vector)
@@ -57,16 +57,16 @@ class BalanceCompass:
         mode = "red-tilt" if int(elapsed_s / self.half_cycle) % 2 == 0 else "green-com"
         if mode == "red-tilt":
             vector = tilt_vector(roll, pitch)
-            colors = eight_led_rgb(vector, "red")
+            colors = seven_led_rgb(vector, "red")
             qualified = True
         elif com_valid and com_vector is not None:
             vector = tuple(map(float, com_vector))
-            colors = eight_led_rgb(vector, "green")
+            colors = seven_led_rgb(vector, "green")
             qualified = True
         else:
             # Never show all-dim green ('balanced') if COM cannot be estimated.
             vector = (0.0, 0.0)
-            colors = tuple((0, 3 if i % 2 == 0 else 0, 0) for i in range(8))
+            colors = tuple((0, 3 if i % 2 == 0 else 0, 0) for i in range(7))
             qualified = False
         physical = [(0, 0, 0)] * 7
         for i, physical_index in enumerate(self.led_order):
