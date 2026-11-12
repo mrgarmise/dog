@@ -24,6 +24,13 @@ def build():
 <body name="base" pos="0 0 .109"><freejoint/>
 <geom name="body" type="box" size=".068 .038 .015" mass=".40" rgba=".2 .2 .2 1"/>
 <site name="imu" pos="0 0 0" size=".002"/>
+<geom name="compass_led_0" type="sphere" pos="0.024000 0.000000 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
+<geom name="compass_led_1" type="sphere" pos="0.014964 0.018764 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
+<geom name="compass_led_2" type="sphere" pos="-0.005341 0.023398 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
+<geom name="compass_led_3" type="sphere" pos="-0.021623 0.010413 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
+<geom name="compass_led_4" type="sphere" pos="-0.021623 -0.010413 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
+<geom name="compass_led_5" type="sphere" pos="-0.005341 -0.023398 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
+<geom name="compass_led_6" type="sphere" pos="0.014964 -0.018764 .020" size=".0045" contype="0" conaffinity="0" mass="0" rgba=".03 0 0 1"/>
 '''+''.join(limbs)+'''</body></worldbody><actuator>'''+''.join(actuators)+'''</actuator><sensor><accelerometer name="accel" site="imu"/><gyro name="gyro" site="imu"/></sensor></mujoco>'''
 if __name__=='__main__':
     Path(__file__).parent.joinpath('models/dog.xml').write_text(build()+'\n')
