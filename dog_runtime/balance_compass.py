@@ -1,7 +1,7 @@
 """Shared FNK0050 Balance Compass logic. No GPIO or motor I/O.
 
 Body coordinates: +X forward, +Y left, +Z up. Logical LEDs:
-front, front-left, left, rear-left, rear, rear-right, right, front-right.
+seven equally spaced LEDs starting at front, progressing toward left.
 """
 from dataclasses import dataclass
 import math
@@ -34,8 +34,8 @@ def eight_led_rgb(vector, color, base=0.14, contrast=0.12, cap=60):
     if not 0 < contrast < base < 1 - contrast or not 1 <= cap <= 255:
         raise ValueError("invalid intensity limits")
     out = []
-    for i in range(8):
-        direction = i * math.pi / 4
+    for i in range(7):
+        direction = i * 2 * math.pi / 7
         projected = _clamp(x * math.cos(direction) + y * math.sin(direction), -1, 1)
         value = max(1, round(cap * (base + contrast * projected)))
         out.append((value, 0, 0) if color == "red" else (0, value, 0))
@@ -47,9 +47,9 @@ class BalanceCompass:
         if not math.isfinite(half_cycle) or half_cycle <= 0:
             raise ValueError("invalid half-cycle")
         self.half_cycle = half_cycle
-        self.led_order = tuple(range(8)) if led_order is None else tuple(led_order)
-        if sorted(self.led_order) != list(range(8)):
-            raise ValueError("led_order must be a permutation of 0..7")
+        self.led_order = tuple(range(7)) if led_order is None else tuple(led_order)
+        if sorted(self.led_order) != list(range(7)):
+            raise ValueError("led_order must be a permutation of 0..6")
 
     def frame(self, elapsed_s, *, roll, pitch, com_vector=None, com_valid=False):
         if not math.isfinite(elapsed_s) or elapsed_s < 0:
@@ -68,7 +68,7 @@ class BalanceCompass:
             vector = (0.0, 0.0)
             colors = tuple((0, 3 if i % 2 == 0 else 0, 0) for i in range(8))
             qualified = False
-        physical = [(0, 0, 0)] * 8
+        physical = [(0, 0, 0)] * 7
         for i, physical_index in enumerate(self.led_order):
             physical[physical_index] = colors[i]
         return CompassFrame(mode, tuple(physical), vector, qualified)
