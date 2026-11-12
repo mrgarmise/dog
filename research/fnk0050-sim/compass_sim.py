@@ -80,7 +80,7 @@ class SimBalanceCompass:
             com_vector=com_vector, com_valid=valid,
         )
         for geom_id, rgb in zip(self.geom_ids, frame.rgb):
-            self.model.geom_rgba[geom_id] = [*(v / 255 for v in rgb), 1.0]
+            self.model.geom_rgba[geom_id] = [*(min(1.0, 0.12 + v / 30.0) if v else 0.0 for v in rgb), 1.0]
         return {
             "time_s": float(data.time),
             "mode": frame.mode,
