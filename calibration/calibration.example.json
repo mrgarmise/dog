@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "device": "Freenove FNK0050",
+  "mode": "simulation_only",
+  "servo_limits_degrees": [
+    18,
+    162
+  ],
+  "nominal_foot_coordinates_mm": [
+    [
+      0,
+      99,
+      10
+    ],
+    [
+      0,
+      99,
+      10
+    ],
+    [
+      0,
+      99,
+      -10
+    ],
+    [
+      0,
+      99,
+      -10
+    ]
+  ],
+  "calibration_foot_coordinates_mm": [
+    [
+      0,
+      99,
+      10
+    ],
+    [
+      0,
+      99,
+      10
+    ],
+    [
+      0,
+      99,
+      -10
+    ],
+    [
+      0,
+      99,
+      -10
+    ]
+  ],
+  "notes": "Leg order follows Control.py indexes 0-3. Physical corners not yet verified."
+}

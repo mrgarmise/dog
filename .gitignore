@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dog-specific runtime calibration and measurements
+calibration.json
+joint_measurements.json
+*.bak
+
+# Runtime logs and temporary outputs
+*.log
+*.jsonl
