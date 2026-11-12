@@ -1,0 +1,45 @@
+<mujoco model="FNK0050 uncalibrated research prototype">
+<compiler angle="radian"/>
+<option timestep=".002" gravity="0 0 -9.81" integrator="implicitfast" iterations="50"/>
+<default><joint damping=".01" armature=".00001"/><geom friction=".7 .005 .0001" rgba=".25 .4 .65 1" condim="3"/></default>
+<worldbody><light pos="0 0 2"/><geom name="floor" type="plane" size="5 5 .1" rgba=".6 .6 .6 1"/>
+<body name="base" pos="0 0 .109"><freejoint/>
+<geom name="body" type="box" size=".068 .038 .015" mass=".40" rgba=".2 .2 .2 1"/>
+<site name="imu" pos="0 0 0" size=".002"/>
+<body name="FL_roll_link" pos="0.068 0.038 0">
+<joint name="FL_roll" axis="1 0 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.023" size=".006" mass=".012"/>
+<body name="FL_hip_link" pos="0 0 -.023"><joint name="FL_hip" axis="0 -1 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".005" mass=".018"/>
+<body name="FL_knee_link" pos="0 0 -.055"><joint name="FL_knee" axis="0 -1 0" range=".314159 2.827433"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".004" mass=".014"/>
+<geom name="FL_foot" type="sphere" pos="0 0 -.055" size=".008" mass=".003" friction=".7 .005 .0001" rgba=".1 .1 .1 1"/>
+<site name="FL_tip" pos="0 0 -.055" size=".002"/>
+</body></body></body><body name="RL_roll_link" pos="-0.068 0.038 0">
+<joint name="RL_roll" axis="1 0 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.023" size=".006" mass=".012"/>
+<body name="RL_hip_link" pos="0 0 -.023"><joint name="RL_hip" axis="0 -1 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".005" mass=".018"/>
+<body name="RL_knee_link" pos="0 0 -.055"><joint name="RL_knee" axis="0 -1 0" range=".314159 2.827433"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".004" mass=".014"/>
+<geom name="RL_foot" type="sphere" pos="0 0 -.055" size=".008" mass=".003" friction=".7 .005 .0001" rgba=".1 .1 .1 1"/>
+<site name="RL_tip" pos="0 0 -.055" size=".002"/>
+</body></body></body><body name="RR_roll_link" pos="-0.068 -0.038 0">
+<joint name="RR_roll" axis="1 0 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.023" size=".006" mass=".012"/>
+<body name="RR_hip_link" pos="0 0 -.023"><joint name="RR_hip" axis="0 -1 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".005" mass=".018"/>
+<body name="RR_knee_link" pos="0 0 -.055"><joint name="RR_knee" axis="0 -1 0" range=".314159 2.827433"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".004" mass=".014"/>
+<geom name="RR_foot" type="sphere" pos="0 0 -.055" size=".008" mass=".003" friction=".7 .005 .0001" rgba=".1 .1 .1 1"/>
+<site name="RR_tip" pos="0 0 -.055" size=".002"/>
+</body></body></body><body name="FR_roll_link" pos="0.068 -0.038 0">
+<joint name="FR_roll" axis="1 0 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.023" size=".006" mass=".012"/>
+<body name="FR_hip_link" pos="0 0 -.023"><joint name="FR_hip" axis="0 -1 0" range="-1.256637 1.256637"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".005" mass=".018"/>
+<body name="FR_knee_link" pos="0 0 -.055"><joint name="FR_knee" axis="0 -1 0" range=".314159 2.827433"/>
+<geom type="capsule" fromto="0 0 0 0 0 -.055" size=".004" mass=".014"/>
+<geom name="FR_foot" type="sphere" pos="0 0 -.055" size=".008" mass=".003" friction=".7 .005 .0001" rgba=".1 .1 .1 1"/>
+<site name="FR_tip" pos="0 0 -.055" size=".002"/>
+</body></body></body></body></worldbody><actuator><position name="FL_roll_servo" joint="FL_roll" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="FL_hip_servo" joint="FL_hip" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="FL_knee_servo" joint="FL_knee" kp="2" kv=".04" ctrlrange="0.314159 2.827433" forcerange="-.15 .15"/><position name="RL_roll_servo" joint="RL_roll" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="RL_hip_servo" joint="RL_hip" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="RL_knee_servo" joint="RL_knee" kp="2" kv=".04" ctrlrange="0.314159 2.827433" forcerange="-.15 .15"/><position name="RR_roll_servo" joint="RR_roll" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="RR_hip_servo" joint="RR_hip" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="RR_knee_servo" joint="RR_knee" kp="2" kv=".04" ctrlrange="0.314159 2.827433" forcerange="-.15 .15"/><position name="FR_roll_servo" joint="FR_roll" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="FR_hip_servo" joint="FR_hip" kp="2" kv=".04" ctrlrange="-1.256637 1.256637" forcerange="-.15 .15"/><position name="FR_knee_servo" joint="FR_knee" kp="2" kv=".04" ctrlrange="0.314159 2.827433" forcerange="-.15 .15"/></actuator><sensor><accelerometer name="accel" site="imu"/><gyro name="gyro" site="imu"/></sensor></mujoco>

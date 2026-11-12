@@ -1,0 +1,17 @@
+test_channels_and_neutral (test_core.CoreTests.test_channels_and_neutral) ... ok
+test_gait_limits (test_core.CoreTests.test_gait_limits) ... ok
+test_independent_homogeneous_chain (test_core.CoreTests.test_independent_homogeneous_chain) ... ok
+test_official_forward_equations (test_core.CoreTests.test_official_forward_equations) ... ok
+test_reject (test_core.CoreTests.test_reject) ... ok
+test_round_trip (test_core.CoreTests.test_round_trip) ... ok
+test_slew (test_core.CoreTests.test_slew) ... ok
+test_bad_action_and_reset (test_physics.PhysicsTests.test_bad_action_and_reset) ... ok
+test_determinism (test_physics.PhysicsTests.test_determinism) ... ok
+test_model_fk (test_physics.PhysicsTests.test_model_fk) ... ok
+test_stand (test_physics.PhysicsTests.test_stand) ... ok
+test_torque_bound (test_physics.PhysicsTests.test_torque_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.339s
+
+OK

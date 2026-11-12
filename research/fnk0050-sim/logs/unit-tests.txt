@@ -1,0 +1,11 @@
+test_channels_and_neutral (test_core.CoreTests.test_channels_and_neutral) ... ok
+test_gait_limits (test_core.CoreTests.test_gait_limits) ... ok
+test_independent_homogeneous_chain (test_core.CoreTests.test_independent_homogeneous_chain) ... ok
+test_reject (test_core.CoreTests.test_reject) ... ok
+test_round_trip (test_core.CoreTests.test_round_trip) ... ok
+test_slew (test_core.CoreTests.test_slew) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.165s
+
+OK
