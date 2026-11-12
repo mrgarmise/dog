@@ -1,0 +1,1 @@
+{"episodes": 9, "falls": 0, "min_distance": -6.829386161180268, "max_distance": 0.2838751212976609, "max_abs_yaw": 0.13043504329561964}

@@ -1,0 +1,19 @@
+{
+  "schema": "dog-gait-v1",
+  "units": "SI/radians",
+  "leg_order": [
+    "FL",
+    "RL",
+    "RR",
+    "FR"
+  ],
+  "params": {
+    "stride": 0.015204441921207476,
+    "lift": 0.010853094463439059,
+    "hz": 0.41480515735813306,
+    "height": 0.10280794017548638
+  },
+  "hardware_accepted": false,
+  "simulation_accepted": false,
+  "validation_note": "Demonstration only: one of ten held-out trials moved backward; coarse timestep also changes behavior."
+}

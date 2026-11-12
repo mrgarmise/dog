@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "mujoco": "3.3.7",
+    "gymnasium": "1.2.2"
+  },
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu": "Host CPU unavailable; lscpu failed: /sys/devices/system/cpu/possible missing",
+  "not_mint": true
+}

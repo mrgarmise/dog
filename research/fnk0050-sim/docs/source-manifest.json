@@ -1,0 +1,90 @@
+[
+  {
+    "repository": "Freenove/Freenove_Robot_Dog_Kit_for_Raspberry_Pi",
+    "revision": "73892c05dde13e1c2af24b7e1237f682af82ee66",
+    "paths": [
+      "Code/Libs/mpu6050/LICENSE",
+      "Code/Libs/mpu6050/README.rst",
+      "Code/Libs/rpi-ws281x-python/LICENSE",
+      "Code/Libs/rpi-ws281x-python/README.md",
+      "Code/Libs/rpi-ws281x-python/library/LICENSE",
+      "Code/Libs/rpi-ws281x-python/library/README.rst",
+      "Code/Libs/rpi-ws281x-python/library/lib/LICENSE",
+      "Code/Libs/rpi-ws281x-python/library/lib/README.md",
+      "Code/Server/Control.py",
+      "Code/Server/IMU.py",
+      "Code/Server/Servo.py",
+      "LICENSE.txt",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "green-creeper/wavego_webots",
+    "revision": "246932897563146da435a3b78d3dc6b4f40ca847",
+    "paths": [
+      "README.md",
+      "protos/Wavego.proto",
+      "worlds/apartment.wbt"
+    ]
+  },
+  {
+    "repository": "Coolnesss/dog-env",
+    "revision": "8be28fdedbf78822e359e2db6e5c7a776de1fd43",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "stanislavbritanishskii/Dog",
+    "revision": "aba260d2a94c26b275bf72c824c39634dc95a6f3",
+    "paths": [
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  {
+    "repository": "TuanLinh05/Quadruped-robot-12DOF",
+    "revision": "a21ba1bdc530b842c99701daa813e992584326ae",
+    "paths": [
+      "README.md",
+      "quadruped_ros2/README.md",
+      "quadruped_ros2/Webots_Simulation/worlds/quad_3dof_L1L2L3_4legs.wbt",
+      "ros2_ws/README.md",
+      "ros2_ws/src/quadruped_ros2/worlds/quad_3dof_L1L2L3_4legs.wbt"
+    ]
+  },
+  {
+    "repository": "chvmp/robots",
+    "revision": "83d59811d262d52c16fe8b6da8f269ae312e1c5f",
+    "paths": [
+      "README.md",
+      "configs/a1_config/README.md",
+      "configs/aliengo_config/README.md",
+      "configs/anymal_b_config/README.md",
+      "configs/anymal_c_config/README.md",
+      "configs/bruno_config/README.md",
+      "configs/dkitty_config/README.md",
+      "configs/dream_walker_config/README.md",
+      "configs/go1_config/README.md",
+      "configs/littledog_config/README.md",
+      "configs/mini_cheetah_config/README.md",
+      "configs/mini_pupper_config/README.md",
+      "configs/open_quadruped_config/README.md",
+      "configs/opendog_config/README.md",
+      "configs/spot_config/README.md",
+      "configs/spotmicro_config/README.md",
+      "configs/stanford_pupper_config/README.md",
+      "configs/stochlite_config/README.md"
+    ]
+  },
+  {
+    "repository": "MarcHesse/mhflocke",
+    "revision": "94b258475e02fc99ec0fd146c3de0af339099498",
+    "tag": "v0.4.3-paper2",
+    "inspected": [
+      "LICENSE",
+      "creatures/freenove/freenove.xml",
+      "creatures/freenove/servo_config.json"
+    ]
+  }
+]

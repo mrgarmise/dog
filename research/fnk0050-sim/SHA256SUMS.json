@@ -1,0 +1,198 @@
+[
+  {
+    "path": ".gitignore",
+    "sha256": "258bd2a223b45f1fd39583c054bb7cfd402832710f999504a9ca8cc0361b1ee0"
+  },
+  {
+    "path": "LICENSE.txt",
+    "sha256": "6f0ad05bd210c96bf7541c7fe9d117dab0542613594a3aa4d22c8a28a0a7b105"
+  },
+  {
+    "path": "NOTICE.md",
+    "sha256": "99c46b0bf008de509b270de83a44fdaf65a6722893e1b01ffb52250a91c87c68"
+  },
+  {
+    "path": "README.md",
+    "sha256": "830174fad7cdff9ed6c505b59ec70a144db54e43293038125e9508dbb95b31da"
+  },
+  {
+    "path": "REPORT.md",
+    "sha256": "7c12e4fcef9fec9e76c45ae030862ab690989e90438d45a09825169b4732fab7"
+  },
+  {
+    "path": "RESULTS.md",
+    "sha256": "b4ad540e99e151b2e81cfe7278f1094c216dedd740b4201bd18f7dd837f9190b"
+  },
+  {
+    "path": "controllers/dog/dog.py",
+    "sha256": "bbbfaa2a02644777cc5f75c7ad79355b7253c57ea3c3e78ea627fcbf9e85ad98"
+  },
+  {
+    "path": "core.py",
+    "sha256": "b97d5aa563a308db806718ec35e89121f1f43872b2d58661ef83561758972c8e"
+  },
+  {
+    "path": "docs/measurements.md",
+    "sha256": "f80daae221c613a74f029f369d9391cd456e48421b23090763c1b401f5cc3a85"
+  },
+  {
+    "path": "docs/prototype.png",
+    "sha256": "5099c8fa760a6d68d4b8f0f02d8a4add8a00d07f7a01c6c97f1f75f867f83234"
+  },
+  {
+    "path": "docs/reproducibility.md",
+    "sha256": "2aac39e075b8f17f552009327aa9cfe5d3fa043c970500fcb50e525697b9283a"
+  },
+  {
+    "path": "docs/sim-to-real.md",
+    "sha256": "f348962423320909efbbe49239cb900fa61be82ad184798752e2d39660989c15"
+  },
+  {
+    "path": "docs/source-manifest.json",
+    "sha256": "3546fb2706ebd659647670aae9eac871f4baaa6935e8befeaf6eaae6470db861"
+  },
+  {
+    "path": "dry_run.py",
+    "sha256": "7df7f397e6ff500782ca11fb93553cd96978ada9c5e543fcea61a09c925085d6"
+  },
+  {
+    "path": "env.py",
+    "sha256": "c0b89f4ac356ea7d19a8468b1c209913f2cbc451ac95171515d276fb2021e8c2"
+  },
+  {
+    "path": "evaluate.py",
+    "sha256": "d32e9bd2e6fa959c86964581cc4eadc747661954d52c793ac49d6cd08e01bb19"
+  },
+  {
+    "path": "gait_policy.json",
+    "sha256": "3d22cf408bf72e3126820d272ba095f96f431bf411d2eda3459bc5c137ced963"
+  },
+  {
+    "path": "generate.py",
+    "sha256": "868d25ccf3db626934f5f61804a6f871bf4796dcb182d57cecb453751e35ddb6"
+  },
+  {
+    "path": "generate_mjcf.py",
+    "sha256": "baa2391981ffa9f8a8285418d2dbb1e1c909cde452813a2c8d5c668d9e0845dd"
+  },
+  {
+    "path": "logs/dry-run.jsonl",
+    "sha256": "ae2a9c73e2ca926639b593b12067535cfa50d679f2ff67fc2466dccb4d3a7552"
+  },
+  {
+    "path": "logs/environment.json",
+    "sha256": "e9fed6b493d08e8d3641f9a70bd4e7ce1c08abcc1dfa6a26bfcfe3ac96feb351"
+  },
+  {
+    "path": "logs/evaluation-console.txt",
+    "sha256": "06a69204ab40302e9491b4bf5b7c62bf220e418da3900abecc658ee8edb05fae"
+  },
+  {
+    "path": "logs/evaluation-mujoco4-console.txt",
+    "sha256": "124818dfb9859ee7c8c14afa7a2881e31031d553643e9425faef2a7dab43bd1e"
+  },
+  {
+    "path": "logs/evaluation-mujoco4.json",
+    "sha256": "46b51abb9c703b0b5b530666d5c6e684b9eb2911953aa825a118fe801f62dcef"
+  },
+  {
+    "path": "logs/evaluation.json",
+    "sha256": "af26aae8222e2e5c99b036872fd94d5bfba66fa356dfa505118079496ce1e43c"
+  },
+  {
+    "path": "logs/long-validation-console.txt",
+    "sha256": "a6c6257f41e99160edaf900e4a6395371bc2de843a6f512414ec014b00f9fa6c"
+  },
+  {
+    "path": "logs/long-validation-initial.json",
+    "sha256": "cd871333d06950f28d886e0397c4752a97a9c2b445e27619dc036a9c5173a4c2"
+  },
+  {
+    "path": "logs/long-validation.json",
+    "sha256": "7a5e6432f9d4056d6edceca1c2c599bc3c1be7ff676279042f039d32d478d48d"
+  },
+  {
+    "path": "logs/policy-initial-rejected.json",
+    "sha256": "5d7267763db90c74672261567caf34fa8541da4b0796067ecf4466c9556b06c7"
+  },
+  {
+    "path": "logs/search-console.txt",
+    "sha256": "d280b7e40c2cbac52e09baf1c1908d530a02c48cac7a1181512400d18b2d41f5"
+  },
+  {
+    "path": "logs/search-initial-shuffling.json",
+    "sha256": "2ed352c83379813c046cd74a7b14d66f12cab83f50f172814985c026ff1c7199"
+  },
+  {
+    "path": "logs/search.json",
+    "sha256": "fab718f716d50ff42302b0d6e8b623f2bbd4776f8437433d323760b22dddac56"
+  },
+  {
+    "path": "logs/tests-mujoco4.txt",
+    "sha256": "3d5ed6e12b09864c06c8ef35a785831bcc8496c62ae517342b30f262d620a578"
+  },
+  {
+    "path": "logs/tests.txt",
+    "sha256": "bb341b2c7f065879825f52955df551c5d4ec75c4a0d87160ccce5013b94f1509"
+  },
+  {
+    "path": "logs/unit-tests.txt",
+    "sha256": "31e188fe1d2d7498549912b21be2181dcd96839e343ae7c20abde23e4e8e67be"
+  },
+  {
+    "path": "mint_check.sh",
+    "sha256": "50896bde52e17e7485762c521b5279d53788747815223c4df72b579af499aa56"
+  },
+  {
+    "path": "models/dog.xml",
+    "sha256": "ae32a1d981b390fcb113abd0e4f52a1f31710376ab6f9e93ad299cbe28fe70cb"
+  },
+  {
+    "path": "mujoco_env.py",
+    "sha256": "8af2245de6fd87b5041ba0f3fa9ff5c676119aedd960c4a3d2c55cf4ed94c21a"
+  },
+  {
+    "path": "reference/Freenove_Control.py",
+    "sha256": "b2cbf82c10a10dd0dfc14eda1681a1e183de46265545c7a25cec4c946c5c8490"
+  },
+  {
+    "path": "reference/Freenove_Servo.py",
+    "sha256": "89af382278bf46965d97d7061b439b273b2a9e34b87c54b039e0a10c6460e91a"
+  },
+  {
+    "path": "reference/official_kinematics.py",
+    "sha256": "a26122949d0012bd8c6aaab31aab2765d5ae95470dff06766ebca702236c34ed"
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "59c5b2166ab06448ed255f96112221eed48e540a261e468b520a51cac0edcef4"
+  },
+  {
+    "path": "setup.sh",
+    "sha256": "ab9489e8776386e788a7bda74563093abe3c1284943e69f4cc3cf1fde95a2d89"
+  },
+  {
+    "path": "tests/test_core.py",
+    "sha256": "9720feba3dc1156a8cc7a63e0d3e469e56bafb692e52e3c487013e7100d6e66d"
+  },
+  {
+    "path": "tests/test_physics.py",
+    "sha256": "a2c6b66f1e9e0a874e00d8e123bfdc02be73ca18d833ad3af3744c16cc6a46d4"
+  },
+  {
+    "path": "train_gait.py",
+    "sha256": "79d26476411aac2a26262e1227740329b56198e4364495fcf93e43e52c8f891a"
+  },
+  {
+    "path": "validate_policy.py",
+    "sha256": "c1a509efbaae78eb4cd658eb802ff8ce5e538e5a234fb4d27ad16afbf1f7149e"
+  },
+  {
+    "path": "view.py",
+    "sha256": "2c780ae7f1b07c57abdf14dc6678b1ce96f206d057f0737430c5a173abd8df71"
+  },
+  {
+    "path": "worlds/dog.wbt",
+    "sha256": "fb0216b8e9d18956decdff6e5d3fe7809743a2de38bac3b70cb76e5cf5055f83"
+  }
+]

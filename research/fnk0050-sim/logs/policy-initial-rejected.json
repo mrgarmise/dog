@@ -1,0 +1,17 @@
+{
+  "schema": "dog-gait-v1",
+  "units": "SI/radians",
+  "leg_order": [
+    "FL",
+    "RL",
+    "RR",
+    "FR"
+  ],
+  "params": {
+    "stride": 0.0137702711819723,
+    "lift": 0.006009419820963552,
+    "hz": 0.8398485664457322,
+    "height": 0.09329569044211332
+  },
+  "hardware_accepted": false
+}
